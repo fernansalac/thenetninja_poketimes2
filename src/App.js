@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Post from './components/Post';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route exact path="/" component={Home} />
         <Route path="/aboutUs" component={AboutUs} />
         <Route path="/contact" component={Contact} />
+        <Route path="/:post_id" component={Post} />
       </div>
     </BrowserRouter>
   );
