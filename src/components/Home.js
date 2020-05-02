@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import logo from '../logo.jpg';
+//import logo from '../logo.jpg';
 import { Card, Button } from 'react-bootstrap';
 
 class Home extends Component {
@@ -41,7 +41,7 @@ class Home extends Component {
                             <Card.Text>
                                 {post.body}
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary"><Link to={'/services/'+ post.title + '/' + post.body}>Click me</Link></Button>
                         </Card.Body>
                         <Card.Footer className="text-muted">2 days ago</Card.Footer>
                     </Card>

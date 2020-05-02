@@ -18,7 +18,8 @@ function App() {
           <Route path="/aboutUs" component={AboutUs} />
           <Route path="/contact" component={Contact} />
           <Route path="/post/:post_id" component={Post} />
-          <Route path="/services/:service_name" component={Services} />
+
+          <Route path="/services/:service_title/:service_body" component={Services} />
         </Switch>
       </div>
     </BrowserRouter>
